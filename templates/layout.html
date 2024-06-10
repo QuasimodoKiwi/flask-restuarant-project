@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         html, body{
+            min-height: 100%;
             margin: 0;
             overflow-x: hidden;
         }
@@ -12,17 +13,25 @@
             display: flex;
             width: 100%;
             justify-content: space-between;
+            background-color: gainsboro;
         }
         .header-buttons{
             display: flex;
-            justify-content: space-between;
-            width: 70%;
-            background-color: gainsboro;
+            justify-content: space-evenly;
+            width: 75%;
         }
         .login-cart{
             display: flex;
-            width: 20%;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            width: 15%;
+        }   
+        footer{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 200px;
+            width: 100%;
+            background-color: grey;
         }
     </style>
 </head>
@@ -42,7 +51,22 @@
         </div>
     </header>
     <footer>
-        
+        <div>
+            <h1>Contact</h1>
+            <h4>Serving all of Lancaster</h4>
+            <h4>+1 (717) 492-5902</h4>
+        </div>
+        <div>
+            <h1>Our Hours</h1>
+            <h2>Open 7 Days a Week,</h2>
+            <h4>24/7</h4>
+        </div>
+        <div>
+            <h1>Social</h1>
+            <button>Twitter</button>
+            <button>Facebook</button>
+            <button>Instagram</button>
+        </div>
     </footer>
 </body>
 </html>
