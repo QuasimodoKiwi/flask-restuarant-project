@@ -7,40 +7,10 @@
                 margin: 0;
                 overflow-x: hidden;
             }
-            header{
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-            }
-            .header-buttons{
-                display: flex;
-                justify-content: space-between;
-                width: 70%;
-                background-color: gainsboro;
-            }
-            .login-cart{
-                display: flex;
-                width: 20%;
-                justify-content: space-between;
-            }
         </style>
     </head>
     <body>
-        <header>
-            <div class="header-buttons">
-                <h2>Home</h2>
-                <h2>About Us</h2>
-                <h2>Menu</h2>
-                <h2>Specials</h2>
-                <h2>Order Now</h2>
-                <h2>Catering</h2>
-                <h2>Gift Cards</h2>
-            </div>
-            <div class="login-cart">
-                <h2>Log in</h2>
-                <h2>Check Cart</h2>
-            </div>
-        </header>
+        {% include 'header_and_footer/header.html' %}
         <section class="diner-info">
             <h2>Wilson's Diner</h2>
             <div>
@@ -68,23 +38,6 @@
             <h2>Specials</h2>
             <hr>
         </section>
-        <footer>
-            <div>
-                <h2>Contact</h2>
-                <h3>Servin' Lancaster since 65'.</h3>
-                <h3>981 Diner Avenue Lancaster, PA 17601</h3>
-                <h4> + 1(717) 626-0956</h4>
-            </div>
-            <div>
-                <h2>Our Hours</h2>
-                <h3>Open 24/7, every week!</h3>
-            </div>
-            <div>
-                <h2>Social:</h2>
-                <button>Twitter</button>
-                <button>Facebook</button>
-                <button>Instagram</button>
-            </div>
-        </footer>
+        {% include 'header_and_footer/footer.html' %}
     </body>
 </html>
