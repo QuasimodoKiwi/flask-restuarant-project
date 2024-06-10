@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Wilson's Kitchen</title>
+        <title>Wilson's Diner</title>
         <style>
             html, body{
                 margin: 0;
                 overflow-x: hidden;
             }
-            header{
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-            }
-            .header-buttons{
-                display: flex;
-                justify-content: space-between;
-                width: 70%;
-                background-color: gainsboro;
-            }
-            .login-cart{
-                display: flex;
-                width: 20%;
-                justify-content: space-between;
-            }
         </style>
     </head>
     <body>
-        <header>
-            <div class="header-buttons">
-                <h2>Wilson's Kitchen</h2>
-                <h2>Order Now</h2>
-                <h2>Menu</h2>
-                <h2>Catering</h2>
-                <h2>Gift Cards</h2>
-                <h2>About Us</h2>
+        {% include 'header_and_footer/header.html' %}
+        <section class="diner-info">
+            <h2>Wilson's Diner</h2>
+            <div>
+                <h5>Address</h5>
+                <hr>
+                <h5>981 Diner Avenue Lancaster, PA 17601</h5>
+                <hr>
             </div>
-            <div class="login-cart">
-                <h2>Log in</h2>
-                <h2>Check Cart</h2>
+            <div>
+                <h4>Call Us:</h4>
+                <hr>
+                <h4>(717) 626-0956</h4>
+                <hr>
             </div>
-
-        </header>
+            <p>As an Award-Winning Diner,
+                we have been dedicated to serving America's classic dishes from all corners of the United States
+                to Lancaster's since 1965 and will never stop.
+            </p>
+        </section>
+        <section>
+            <h2>Menu</h4>
+                <hr>
+        </section>
+        <section>
+            <h2>Specials</h2>
+            <hr>
+        </section>
+        {% include 'header_and_footer/footer.html' %}
     </body>
 </html>t
